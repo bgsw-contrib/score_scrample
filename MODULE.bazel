@@ -78,6 +78,16 @@ bazel_dep(name = "platforms", version = "1.0.0")
 bazel_dep(name = "score_bazel_platforms", version = "0.0.2")
 bazel_dep(name = "score_logging", version = "0.0.3")
 git_override(
+    module_name = "score_baselibs",
+    commit = "99d49637a2199f33a71edc479d39970e3bdcb271",
+    remote = "https://github.com/eclipse-score/baselibs.git",
+)
+git_override(
+    module_name = "score_communication",
+    commit = "3203fd41ea3509defc498e846e1674085d8469aa",
+    remote = "https://github.com/eclipse-score/communication.git",
+)
+git_override(
     module_name = "score_logging",
     commit = "9ed6a88cab10a81bf6b0813712cbd7b9fc7e44c5",
     remote = "https://github.com/eclipse-score/logging.git",
